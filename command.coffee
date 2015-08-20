@@ -1,8 +1,8 @@
 Meshblu = require 'meshblu'
 MeshbluConfig = require 'meshblu-config'
-debug = require('debug')('proxy-consumer')
+debug = require('debug')('meshblu-http-proxy-consumer-example')
 
-PROXY_UUID = '3ab8f03d-bcbf-479f-9403-3c84e8759047'
+PROXY_UUID = process.env.PROXY_UUID
 
 class Command
   constructor: ->
